@@ -69,3 +69,46 @@ let objArray= [
 objArray.forEach(item=>console.log(item.name, item.jobTitle));
 objArray.forEach(function(item)());
 */
+
+///////////////////////////////////////////
+/*
+let objArray= [
+	{
+	name: 'Jack',
+	jobTitle:'Lumberjack',
+	boss: 'Jill'
+	},
+	{
+	name: 'Jill',
+	jobTitle: 'Warlord',
+	boss: 'Banner'
+	},
+	{
+	name: 'Banner',
+	jobTitle: 'Good boy',
+	boss: 'Bananacat'
+	},
+	{name: 'Bananacat',
+	jobTitle:'The best',
+	boss: 'Richard GreenHill'
+	},
+	{
+	name: 'Richard GreenHill',
+	jobTitle: 'Instructor',
+	}
+];
+
+let bossStatement = objArray.forEach(function(item){
+	if(item.boss) {
+		return console.log(`${item.jobTitle} ${item.name} reports to ${item.boss}`);
+	}
+	else {
+	
+		return console.log(`${item.jobTitle} ${item.name} doesn't report to anybody.`);
+	}
+}
+);
+
+console.log(bossStatement);
+// "${title} ${name} reports to ${boss}."
+*/
