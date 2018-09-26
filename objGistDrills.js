@@ -17,7 +17,7 @@ let loaf = {
 
 console.log(loaf.flour, loaf.water);
 console.log(loaf.hydration());
-*/
+
 /////////////////////////////////////
 
 // 2. Iterating over an object's properties
@@ -39,3 +39,33 @@ for(let element in testObject){
 }
 
 // console.log(element ' : ' testObject[element]);
+
+
+let hobbitMeals = {
+	meals: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']
+};
+console.log(hobbitMeals.meals[3]);
+
+
+let objArray= [
+	{
+	name: 'Jack',
+	jobTitle:'Lumberjack'
+	},
+	{
+	name: 'Jill',
+	jobTitle:'Warlord'
+	},
+	{
+	name: 'Banner',
+	jobTitle: 'Good boy'
+	},
+	{name: 'Bananacat',
+	jobTitle:'The best'
+}
+];
+//array = [1,2,3]
+//let item = array[0]
+objArray.forEach(item=>console.log(item.name, item.jobTitle));
+objArray.forEach(function(item)());
+*/
