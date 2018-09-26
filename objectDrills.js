@@ -40,4 +40,37 @@
 ///////////////////////////////////////////////////////
 
 
+function personMaker() {
+    var person = {
+        firstName: 'Paul',
+        lastName: 'Jones',
+        fullName: function(){
+            return this.firstName + ' ' + this.lastName;
+        }
+      };
+    
+      return person;
+}
+personMaker();
+console.log(personMaker());
 
+
+
+
+/////////////////////////
+const sampleObj = {
+    foo: 'foo',
+    bar: 'bar',
+    bizz: 'bizz',
+    bang: 'bang',
+  };
+  
+  function keyDeleter(obj) {
+    delete obj.foo;
+    delete obj.bar;
+    return obj;
+  }
+
+let test = keyDeleter(sampleObj);
+console.log(test);
+  
