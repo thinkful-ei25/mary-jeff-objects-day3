@@ -20,7 +20,12 @@
   function enrollInSummerSchool(students) {
   	let finalArray = [];
   	for(let i=0; i<students.length; i++) {
-  		finalArray.push({name: students[i].name, status: 'In Summer School', course: students[i].course})
+      let iteration = students[i];
+  		finalArray.push({
+        name: iteration.name, 
+        status: 'In Summer School', 
+        course: iteration.course}
+        )
   	}
   	console.log(finalArray);
   	return finalArray;
@@ -29,11 +34,8 @@
 
 
 let studentObject = [
-  {
-    name: 'Tim',
-    status: 'Current student',
-    course: 'Biology'
-  },
+  { name: 'Tim', status: 'Current student',course: 'Biology'
+},
   {
     name: 'Sue',
     status: 'Withdrawn',
