@@ -51,8 +51,8 @@ function personMaker() {
     
       return person;
 }
-personMaker();
-console.log(personMaker());
+let person = personMaker();
+console.log(person.fullName());
 
 
 
